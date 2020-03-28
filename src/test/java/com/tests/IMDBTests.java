@@ -22,7 +22,7 @@ public class IMDBTests {
     public static void setUp() throws MalformedURLException {
         final DesiredCapabilities caps = DesiredCapabilities.chrome();
         caps.setCapability("enableVNC", true);
-        //docker machine default ip for Windows is 192.168.99.100
+
         RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), caps);
         WebDriverRunner.setWebDriver(driver);
     }
