@@ -24,7 +24,7 @@ public class Firefox {
         final DesiredCapabilities caps = DesiredCapabilities.firefox();
         caps.setCapability("enableVNC", true);
         //docker machine default ip for Windows is 192.168.99.100
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), caps);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), caps);
         WebDriverRunner.setWebDriver(driver);
     }
 
